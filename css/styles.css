@@ -1,0 +1,6 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Tac+One&display=swap');
+
+/* styles */
+@import url('./reset-variables.css');
+@import url('./home.css');

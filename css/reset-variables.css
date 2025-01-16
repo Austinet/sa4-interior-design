@@ -1,0 +1,28 @@
+/* variables */
+:root {
+    --white: #fff;
+    --black: #000;
+  }
+  
+  /* resets */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
