@@ -11,31 +11,30 @@
 <body>
     <!-- Header Section -->
     <header id="header">
-        <div class="header-container">
-            <div class="header-container__logo">
-                <a href="index.html">
-                    <img src="assets/images/sa4-logo.png" alt="SA4 Interior Design Logo">
-                </a>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-container__logo">
+                    <a href="index.html">
+                        <img src="assets/images/sa4-logo.png" alt="SA4 Interior Design Logo">
+                    </a>
+                </div>
+                <nav class="header-container__nav">
+                    <ul class="header-container__nav--links">
+                        <li><a href="/" class="active-link">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Designs</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Book Us</a></li>
+                    </ul>
+                </nav>
+    
+                 <!-- Hamburger menu for mobile screens -->
+                 <button id="menu-btn">
+                    <img src="" alt="menu" id="menu-icon">
+                </button>
             </div>
-            <nav class="header-container__nav">
-                <ul class="header-container__nav--links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Our Designs</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Book Us</a></li>
-                </ul>
-            </nav>
-
-             <!-- Hamburger menu for mobile screens -->
-             <button id="menu-btn">
-                Ham
-                <!-- <img src="assets/icons/menu.svg" alt="menu"> -->
-            </button>
         </div>
-    </header>
 
-    <main>
         <!-- Hero Section -->
         <section>
             <div class="hero-container">
@@ -48,6 +47,29 @@
                 </div>
             </div>
         </section>
+    </header>
+
+    <main>
+       <section class="intro">
+        <div class="intro-container">
+            <div class="intro-container__airbnb-image-details">
+                <div class="intro-container__airbnb-image--image">
+                    <img src="assets/images/37 Waterside Lane - gStat6M0ZAQNNCXI9EEc.png" alt="">
+                    <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+                </div>
+                
+            </div>
+            <div class="intro-container__text-container">
+                <h2>First Impressions Last Forever in the World of <span>short-let</span> accommodation</h2>
+                <p>
+                    Did you know that travelers make their booking decisions within the first 20 seconds of viewing a property listing? In today's competitive vacation rental market, standing out isn't just an option – it's essential for success.
+                    At Sa4, we transform ordinary spaces into extraordinary experiences that capture hearts and secure bookings. Our expert designers understand the psychology of what makes guests click "Book Now" and, more importantly, what makes them come back for more.
+                </p>
+    
+                <a href="" class="learn-more-link">Learn more about our design processes</a>
+            </div>           
+        </div>
+       </section>
     </main>
 
     <script src="js/menu.js"></script>

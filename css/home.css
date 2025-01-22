@@ -1,50 +1,165 @@
 /* header section */
 #header {
-    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
-    /* background: #eee; */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 54.05%, rgba(0, 0, 0, 0.1944) 67.36%, rgba(0, 0, 0, 0.434374) 72.09%, rgba(0, 0, 0, 0.648) 76.29%, rgba(0, 0, 0, 0.691993) 82.73%, rgba(0, 0, 0, 0.726965) 87.85%, rgba(0, 0, 0, 0.767534) 93.79%, rgba(0, 0, 0, 0.81) 100%), url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png) no-repeat;
+    background-size: cover;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(140px);
+    z-index: -1;
 }
 
 .header-container {
     max-width: 1280px;
-    padding: 26px 1.5rem;
+    padding: 26px 29px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .header-container__logo img {
     width: 70px;
 }
 
-.header-container__nav--links {
-    /* background: #eee; */
-    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+.header-container__nav {
+    position: absolute;
     width: 100%;
+    left: -45rem;
+    top: 100px;
+    padding: 100px 29px 10rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(140px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.header-container__nav--links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 718px;
-    padding: 0.5rem 0 1rem 1.5rem;
+    width: 169px;
+    margin: 0 auto;
     gap: 1rem;
-
-    position: absolute;
-    top: -20rem;
-    left: 0;
 }
 
 .header-container__nav a {
     /* font-family: Product Sans; */
-    font-size: 1rem;
+    font-size: 30px;
     line-height: 1.5;
-    /* text-underline-position: from-font; */
+    font-weight: 300;
+    text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: var(--black);
 }
 
+.header-container__nav .active-link {
+    color: #BB9B4E;
+    font-weight: 500;
+}
+
 .top-positioning {
-    top: 80px;
+    left: 0;
+}
+
+#menu-btn {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 45px;
+    height: 45px;
+}
+
+
+/* hero section */
+.hero-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 183px 29px 27px;
+}
+
+.hero-container__text-container {
+    max-width: 993px;
+}
+
+.hero-container__text-container h1 {
+    font-family: 'FreightDispProMedium-Italic';
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 56.11px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--white);
+}
+
+.hero-container__text-container h1 span {
+    font-family: 'FreightDispProLight-Italic';
+    line-height: 56.16px;
+    color: var(--primary-yellow);
+}
+
+.hero-container__text-container p {
+    font-family: 'Product Sans Light';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--white);
+}
+
+/* intro container section */
+.intro-container__airbnb-image--image {
+    padding: 31px 19px 0;
+    margin-bottom: 47px;
+}
+
+.intro-container__airbnb-image--image img {
+    height: 314px;
+    object-fit: cover;
+    border-radius: 15px;
+    /* margin-bottom: 15px; */
+}
+
+.intro-container__airbnb-image--image p {
+    font-family: 'Product Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.intro-container__text-container {
+    padding: 0 47px;
+}
+
+.intro-container__text-container h2 {
+    font-family: FreightDispProLight-Italic;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 49.92px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.intro-container__text-container h2 span {
+    font-family: FreightDispProBook-Regular;
+    line-height: 49.68px;
 }
 
 /* responsiveness */
@@ -57,17 +172,26 @@
         width: unset;
     }
 
+    .header-container__nav {
+        position: static;
+        padding: 0;
+        background: unset;
+        box-shadow: none;
+    }
+
     .header-container__nav--links {
         justify-content: space-between;
         align-items: center;
-        max-width: 718px;
+        width: unset;
         /* padding-top: 13px; */
         gap: 37px;
         flex-direction: row;
         align-items: center;
+    }
 
-        position: static;
-        padding: 0;
+    .header-container__nav--links a {
+        font-size: 1rem;
+        font-weight: normal;
     }
 }
 
@@ -77,6 +201,19 @@
         border-radius: 17px 0px 0px 0px;
         opacity: 0px;
     }
+
+    .hero-container {
+        padding: 341px 74px 208px;
+    }
+
+    .hero-container__text-container h1 {
+        font-size: 65px;
+        line-height: 81.05px;
+    }
+
+    .hero-container__text-container h1 span {
+        line-height: 81.12px;
+    }
 }
 
 @media screen and (min-width: 1270px) {
@@ -85,11 +222,4 @@
         gap: 60.34px;
         justify-content: unset;
     }
-}
-
-
-/* hero section */
-.hero-container {
-    background: url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png) no-repeat;
-    background-size: cover;
 }
