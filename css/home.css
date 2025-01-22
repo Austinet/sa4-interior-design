@@ -51,7 +51,7 @@
     max-width: 718px;
     width: 169px;
     margin: 0 auto;
-    gap: 1rem;
+    gap: 20px;
 }
 
 .header-container__nav a {
@@ -121,9 +121,17 @@
 }
 
 /* intro container section */
+.intro-container {
+    padding: 31px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    max-width: 1193px;
+    margin: 0 auto;
+}
+
 .intro-container__airbnb-image--image {
-    padding: 31px 19px 0;
-    margin-bottom: 47px;
+    padding: 0 19px;
 }
 
 .intro-container__airbnb-image--image img {
@@ -140,10 +148,18 @@
     line-height: 18px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    padding: 15px 0 0;
+}
+
+.intro-container__airbnb-image--details {
+    display: none;
 }
 
 .intro-container__text-container {
-    padding: 0 47px;
+    padding: 0 25px;
+    max-width: 858px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .intro-container__text-container h2 {
@@ -155,11 +171,22 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    padding: 0 15px;
 }
 
 .intro-container__text-container h2 span {
     font-family: FreightDispProBook-Regular;
     line-height: 49.68px;
+}
+
+.intro-container__text-container p {
+    margin: 39px auto 36px;
+    font-family: 'Product Sans Light';
+    font-weight: 300;
+    line-height: 29.12px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 760px;
 }
 
 /* responsiveness */
@@ -192,6 +219,51 @@
     .header-container__nav--links a {
         font-size: 1rem;
         font-weight: normal;
+    }
+
+    /* intro container section */
+    .intro-container {
+        flex-direction: column-reverse;
+        gap: 73px;
+        padding: 52px 86px 148px;
+    }
+
+    .intro-container__airbnb-image--image {
+        padding: 0;
+        margin-bottom: 29px;
+    }
+
+    .intro-container__airbnb-image--image img {
+        height: unset;
+    }
+
+    .intro-container__airbnb-image--image p {
+        border-bottom: 1px solid #DCB05A;
+        width: fit-content;
+        padding: 15px 0;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .intro-container__airbnb-image--details {
+        display: block;
+    }
+
+    .intro-container__airbnb-image--details p {
+        font-family: 'Product Sans Light';
+        font-weight: 300;
+        line-height: 30.4px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .intro-container__text-container p {
+        margin: 50px auto 52px;
+    }
+
+    .intro-container__text-container h2 {
+        font-size: 65px;
+        line-height: 81.12px;
     }
 }
 
