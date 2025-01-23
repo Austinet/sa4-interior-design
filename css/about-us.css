@@ -1,0 +1,18 @@
+/* about us page */
+
+/* about us intro section */
+.about-us-intro {
+    margin: 44px 45px 63px;
+}
+
+.about-us-intro h1 {
+    font-family: FreightDispProLight-Italic;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 56.16px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}

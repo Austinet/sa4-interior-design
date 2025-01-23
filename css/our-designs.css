@@ -1,0 +1,27 @@
+/* our designs page */
+
+/* our design intro section */
+.our-designs-intro {
+    margin: 44px 24px 71px;
+    text-align: center;
+}
+
+.our-designs-intro h1 {
+    font-family: FreightDispProLight-Italic;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 56.16px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.our-designs-intro p {
+    margin: 33px 10px 0;
+    font-family: Product Sans Light;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
