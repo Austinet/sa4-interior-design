@@ -122,7 +122,7 @@
 
 /* intro container section */
 .intro-container {
-    padding: 31px 0;
+    padding: 31px 0 90px;
     display: flex;
     flex-direction: column;
     gap: 47px;
@@ -156,14 +156,18 @@
 }
 
 .intro-container__text-container {
-    padding: 0 25px;
+    padding: 0 19px;
     max-width: 858px;
     margin: 0 auto;
     text-align: center;
 }
 
+.hero-container__text-container--text {
+    padding: 0 6px;
+}
+
 .intro-container__text-container h2 {
-    font-family: FreightDispProLight-Italic;
+    font-family: 'FreightDispProLight-Italic';
     font-size: 40px;
     font-style: italic;
     font-weight: 400;
@@ -187,6 +191,251 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     max-width: 760px;
+}
+
+.intro-container__text-container .learn-more-link-container {
+    width: 100%;
+    max-width: 378.77px;
+    margin: 0 auto;
+    /* opacity: 0px; */
+    background: url(../assets/images/link-image.png) no-repeat;
+    background-size: cover;
+    border-radius: 58px;
+
+
+}
+
+.intro-container__text-container .learn-more-link {
+    backdrop-filter: blur(140px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9px;
+    width: 100%;
+    /* max-width: 378.77px; */
+    height: 55px;
+
+    border-radius: 58px;
+    font-family: 'Product Sans Light';
+    /* font-size: 16px; */
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--black);
+    padding: 14px 16.47px 14px 23.77px;
+    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+/* why choose our service section */
+.why-choose-our-service {
+    max-width: 1107px;
+    margin: 0 auto;
+}
+
+.why-choose-our-service__header {
+    max-width: 658px;
+    margin: 0 auto;
+    padding: 0 36px;
+    text-align: center;
+}
+
+.why-choose-our-service__header h2 {
+    font-family: 'FreightDispProLight-Italic';
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 43.68px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 53px;
+}
+
+.why-choose-our-service__header h2 span {
+    font-family: 'FreightDispProBook-Regular';
+    line-height: 43.47px;
+}
+
+.why-choose-our-service__main {
+    margin: 0 12px 46px;
+    /* background: url(../assets/images/why-choose-our-service-banner.png) no-repeat; */
+    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%), url(../assets/images/why-choose-our-service-banner.png) no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.why-choose-our-service__banner {
+    backdrop-filter: blur(183px);
+    border-radius: 15px;
+    padding: 14px 16px 25px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.why-choose-our-service__main--points {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 22px 22px;
+    max-width: 512px;
+    flex-wrap: wrap;
+}
+
+.why-choose-our-service__main--points .points-header {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.why-choose-our-service__main--points .points-header h3 {
+    font-family: 'Product Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.why-choose-our-service__main--points p {
+    font-family: 'Product Sans Light';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.why-choose-us__standout {
+    margin: 0 12px 46px;
+    border-radius: 15px;
+    background: url(../assets/images/air-bnb-banner.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.why-choose-us__standout--banner {
+    display: flex;
+    border-radius: 15px;
+    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(183px);
+    overflow: hidden;
+}
+
+.why-choose-us__standout--details {
+    padding: 17px 0 72px 23px;
+    width: 75%;
+    max-width: 569px;
+}
+
+.why-choose-us__standout--details-header {
+    margin-bottom: 14px;
+}
+
+.why-choose-us__standout--details-header h3 {
+    font-family: FreightDispProBold-Italic;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 38.13px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+
+.why-choose-us__standout--details-header h3 span {
+    font-family: FreightDispProBook-Regular;
+    font-style: normal;
+    line-height: 37.26px;
+    color: #FF385C;
+}
+
+.why-choose-us__standout--details-header p {
+    font-family: FreightDispProLight-Regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.7px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--white);
+}
+
+.why-choose-us__standout--details-details p {
+    font-family: 'Product Sans Light';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--white);
+}
+
+.why-choose-us__standout--details-image {
+    position: absolute;
+    height: 326px;
+    bottom: -0.5rem;
+    right: -25rem;
+}
+
+/* our designs section */
+.our-designs {
+    max-width: 1111px;
+    margin: 0 auto;
+}
+
+.our-designs__header {
+    margin: 0 20px 56px;
+}
+
+.our-designs__header h2 {
+    font-family: FreightDispProLight-Italic;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 43.68px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 19px;
+}
+
+.our-designs__header h2 span {
+    font-family: 'FreightDispProMedium-Italic';
+    line-height: 43.64px;
+}
+
+.our-designs__header p {
+    font-family: 'Product Sans Light';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 29.92px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.our-designs__main {
+    margin: 0 22px;
+}
+
+/* footer section */
+.footer {
+    border-top: 1px solid #0000001A;
+    text-align: center;
+    padding: 50px 19px;
+}
+
+.footer p {
+    font-family: 'Hanken Grotesk';
+    line-height: 28.16px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #00000080;
 }
 
 /* responsiveness */
@@ -265,6 +514,48 @@
         font-size: 65px;
         line-height: 81.12px;
     }
+
+    /* why choose our service section */
+    .why-choose-our-service__header h2 {
+        font-size: 65px;
+        line-height: 81.12px;
+        /* margin-bottom: 52px; */
+    }
+
+    .why-choose-our-service__header h2 span {
+        font-size: 65px;
+        line-height: 80.73px;
+    }
+
+    .why-choose-our-service__main {
+        margin: 0 12px 100px;
+    }
+
+    .why-choose-our-service__banner {
+        gap: 18px;
+    }
+
+    .why-choose-our-service__main--points p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .why-choose-us__standout {
+        margin: 0 12px 91px;
+
+    }
+
+    .why-choose-us__standout--details {
+        padding: 66px 0 66px 62px;
+
+    }
+
+    /* our designs section */
+    .our-designs__header h2 {
+        font-size: 65px;
+        line-height: 81.12px;
+        margin-bottom: 45px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -285,6 +576,31 @@
 
     .hero-container__text-container h1 span {
         line-height: 81.12px;
+    }
+
+    .why-choose-us__standout--details {
+        width: 100%;
+    }
+
+    .why-choose-us__standout--details-image {
+        /* right: -20rem; */
+        right: 0;
+    }
+
+
+    .why-choose-us__standout--details-header {
+        margin-bottom: 19px;
+    }
+
+    .why-choose-us__standout--details-header h3 {
+        font-size: 45px;
+        line-height: 57.2px;
+        margin-bottom: 13px;
+    }
+
+    .why-choose-us__standout--details-header p {
+        font-size: 25px;
+        line-height: 30.88px;
     }
 }
 
