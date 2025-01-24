@@ -64,7 +64,10 @@
     color: var(--black);
 }
 
-.header-container__nav .active-link {
+ 
+
+.header-container__nav .active-link,
+.header-container__nav a:hover  {
     color: #BB9B4E;
     font-weight: 500;
 }
