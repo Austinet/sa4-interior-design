@@ -55,7 +55,7 @@
 }
 
 .header-container__nav a {
-    /* font-family: Product Sans; */
+    font-family: 'Product Sans';
     font-size: 30px;
     line-height: 1.5;
     font-weight: 300;
@@ -179,7 +179,7 @@
 }
 
 .intro-container__text-container h2 span {
-    font-family: FreightDispProBook-Regular;
+    font-family: 'FreightDispProBook-Regular';
     line-height: 49.68px;
 }
 
@@ -260,13 +260,14 @@
 
 .why-choose-our-service__main {
     margin: 0 12px 46px;
-    /* background: url(../assets/images/why-choose-our-service-banner.png) no-repeat; */
-    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%), url(../assets/images/why-choose-our-service-banner.png) no-repeat;
+    background: url(../assets/images/why-choose-our-service-banner.png) no-repeat;
     background-size: cover;
     border-radius: 15px;
 }
 
 .why-choose-our-service__banner {
+    background:
+        linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(183px);
     border-radius: 15px;
     padding: 14px 16px 25px;
@@ -339,7 +340,7 @@
 }
 
 .why-choose-us__standout--details-header h3 {
-    font-family: FreightDispProBold-Italic;
+    font-family: 'FreightDispProBold-Italic';
     font-size: 30px;
     font-style: italic;
     font-weight: 400;
@@ -351,14 +352,14 @@
 }
 
 .why-choose-us__standout--details-header h3 span {
-    font-family: FreightDispProBook-Regular;
+    font-family: 'FreightDispProBook-Regular';
     font-style: normal;
     line-height: 37.26px;
     color: #FF385C;
 }
 
 .why-choose-us__standout--details-header p {
-    font-family: FreightDispProLight-Regular;
+    font-family: 'FreightDispProLight-Regular';
     font-size: 20px;
     font-weight: 400;
     line-height: 24.7px;
@@ -502,7 +503,8 @@
 
 .testimonials__header h2 {
     margin: 0 69px 44px;
-    font-family: FreightDispProLight-Italic;
+    font-family: 'FreightDispProLight-Italic';
+
     font-size: 35px;
     font-style: italic;
     font-weight: 400;
@@ -513,11 +515,12 @@
 }
 
 .testimonials__header h2 span {
-    font-family: FreightDispProMedium-Italic;
+    font-family: 'FreightDispProMedium-Italic';
+    font-family: 'FreightDisp Pro Medium Italic';
 }
 
 .testimonials__main {
-    margin: 0 auto;
+    margin: 0 auto 87px;
     max-width: 592px;
     padding: 0 21px;
 }
@@ -528,6 +531,146 @@
     border: 1px solid #EFF0F6;
     box-shadow: 0px 5px 14px 0px #080F340A;
     max-width: 592px;
+    padding: 40px 34px;
+}
+
+.testimonial-card__review p {
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #514F6E;
+    margin-bottom: 15px;
+}
+
+.testimonial-card__reviewer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-card__reviewer--details h4 {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #170F49;
+    margin-bottom: 6.5px;
+}
+
+.testimonial-card__reviewer--details p {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #6F6C90;
+}
+
+/* contact us section */
+#contact-us {
+    margin: 0 14px;
+}
+
+.contact-us-pointer {
+    margin-left: 3px;
+    border: 0.5px solid var(--black);
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    justify-content: center;
+    width: 316px;
+    height: 52px;
+    border-radius: 27.5px;
+}
+
+.contact-us-pointer p {
+    font-family: Product Sans Light;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.contact-us-line {
+    border-left: 0.5px solid var(--black);
+    height: 38.01px;
+    margin-left: 148.25px;
+}
+
+.contact-us {
+    background: url(../assets/images/air-bnb-banner.png) no-repeat;
+    background-size: cover;
+}
+
+.contact-us-banner {
+    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(183px);
+    padding: 11px 11px 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-us__image img {
+    height: 204px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.contact-us__details--header h2 {
+    font-family: 'FreightDispProLight-Italic';
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 43.68px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.contact-us__details--header p {
+    font-family: 'Product Sans Light';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 29.92px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 13px 0 26px;
+}
+
+.contact-us__details--links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-us__details--links li {
+    padding: 14px 22px;
+    background: var(--white);
+    border-radius: 58px;
+    backdrop-filter: blur(140px);
+}
+
+.contact-us__details--links li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-us__details--links li a span {
+    font-family: Product Sans Light;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 /* footer section */
@@ -606,11 +749,8 @@
     }
 
     .intro-container__airbnb-image--details p {
-        font-family: 'Product Sans Light';
         font-weight: 300;
         line-height: 30.4px;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
 
     .intro-container__text-container p {
@@ -649,12 +789,10 @@
 
     .why-choose-us__standout {
         margin: 0 12px 91px;
-
     }
 
     .why-choose-us__standout--details {
         padding: 66px 0 66px 62px;
-
     }
 
     /* our designs section */
@@ -668,9 +806,32 @@
     .testimonials__header h2 {
         max-width: 436px;
         margin: 0 auto 112px;
-        font-family: FreightDispProLight-Italic;
         font-size: 65px;
         line-height: 81.12px;
+    }
+
+    .testimonials__main {
+        margin: 0 auto 181px;
+        max-width: 592px;
+        padding: 0 21px;
+    }
+
+    .testimonial-card {
+        padding: 44px 36px;
+    }
+
+    .testimonial-card__review p {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+
+    .testimonial-card__reviewer--details h4 {
+        font-size: 18px;
+    }
+
+    .testimonial-card__reviewer--details p {
+        font-size: 18px;
     }
 }
 
@@ -699,10 +860,8 @@
     }
 
     .why-choose-us__standout--details-image {
-        /* right: -20rem; */
         right: 0;
     }
-
 
     .why-choose-us__standout--details-header {
         margin-bottom: 19px;
@@ -739,6 +898,64 @@
 
     .our-designs__main .our-designs__main--items {
         padding: 53px 24px 60px;
+    }
+
+
+    /* contact us section */
+    #contact-us {
+        max-width: 1111px;
+        margin: 0 auto;
+        padding: 0 14px;
+
+    }
+
+    .contact-us-pointer {
+        margin-left: 0;
+        gap: 22px;
+        width: 375px;
+        height: 55px;
+    }
+
+    .contact-us-pointer p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .contact-us-line {
+        margin-left: 232.25px;
+    }
+
+    .contact-us-banner {
+        padding: 23px 23px 23px 53px;
+        gap: 113.23px;
+        flex-direction: row-reverse;
+    }
+
+    .contact-us__image img {
+        height: 100%;
+    }
+
+    .contact-us__details--header h2 {
+        font-size: 45px;
+        line-height: 56.16px;
+        margin-top: 73px;
+    }
+
+    .contact-us__details--header p {
+        margin: 13px 0 61px;
+    }
+
+    .contact-us__details--links ul {
+        margin-bottom: 150px;
+    }
+
+    .contact-us__details--links li {
+        padding: 14px 22px;
+    }
+
+    .contact-us__details--links li a span {
+        font-size: 18px;
+        line-height: 27px;
     }
 }
 
