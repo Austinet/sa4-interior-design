@@ -2,7 +2,9 @@
 
 /* about us intro section */
 .about-us-intro {
-    margin: 44px 45px 63px;
+    margin: 44px auto 63px;
+    max-width: 795px;
+    padding: 0 45px;
 }
 
 .about-us-intro h1 {
@@ -14,4 +16,18 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+}
+
+/* responsiveness */
+@media screen and (min-width: 680px) {
+
+    /* about us intro section */
+    .about-us-intro {
+        margin: 46px auto 174px;
+    }
+
+    .about-us-intro h1 {
+        font-size: 65px;
+        line-height: 81.12px;
+    }
 }
