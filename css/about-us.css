@@ -18,8 +18,63 @@
     text-decoration-skip-ink: none;
 }
 
+.about-us-main {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 0 12px;
+    margin-bottom: 80px;
+}
+
+.about-us-main__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.about-us-main__cards--image img {
+    border-radius: 15px;
+    height: 331px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-us-main__cards h2 {
+    font-family: 'FreightDispProBook-Regular';
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 43.47px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    /* margin-bottom: 31px; */
+    margin-bottom: 22px;
+}
+
+.about-us-main__cards p {
+    font-family: Product Sans Light;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 34.2px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.about-us-main__cards--details-design-intro {
+    margin-bottom: 25px;
+}
+
+.about-us-main__cards--details-final-design h3 {
+    font-family: FreightDispProBook-Regular;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 31.05px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 12px;
+}
+
 /* responsiveness */
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 1024px) {
 
     /* about us intro section */
     .about-us-intro {
@@ -29,5 +84,42 @@
     .about-us-intro h1 {
         font-size: 65px;
         line-height: 81.12px;
+    }
+
+    .about-us-main {
+        gap: 123px;
+        padding: 0 12px;
+        max-width: 1098px;
+        margin: 0 auto 154px;
+    }
+
+    .about-us-main__cards {
+        flex-direction: row-reverse;
+        gap: 55px;
+    }
+
+    .about-us-main__cards-the-process {
+        flex-direction: row;
+    }
+
+    .about-us-main__cards--image {
+        min-width: 488px;
+    }
+
+    .about-us-main__cards--image img {
+        height: unset;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .about-us-main__cards h2 {
+        font-size: 45px;
+        line-height: 55.89px;
+        margin-bottom: 18px;
+    }
+
+    .about-us-main__cards p {
+        font-size: 20px;
+        line-height: 38px;
     }
 }
