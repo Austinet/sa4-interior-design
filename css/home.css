@@ -387,7 +387,7 @@
 /* our designs section */
 .our-designs {
     max-width: 1111px;
-    margin: 0 auto;
+    margin: 0 auto 94px;
 }
 
 .our-designs__header {
@@ -395,7 +395,7 @@
 }
 
 .our-designs__header h2 {
-    font-family: FreightDispProLight-Italic;
+    font-family: 'FreightDispProLight-Italic';
     font-size: 35px;
     font-style: italic;
     font-weight: 400;
@@ -421,6 +421,113 @@
 
 .our-designs__main {
     margin: 0 22px;
+    display: grid;
+    grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+    ;
+    gap: 19px;
+}
+
+.our-designs__main .bedrooms {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 55.91%), url(../assets/images/bedroom.png) no-repeat;
+    grid-area: a;
+}
+
+.our-designs__main .sitting-rooms {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 55.91%), url(../assets/images/sitting-room.png) no-repeat;
+    grid-area: b;
+}
+
+.our-designs__main .dining-rooms {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 55.91%), url(../assets/images/dining-room.png) no-repeat;
+    grid-area: c;
+}
+
+.our-designs__main .bathrooms {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 55.91%), url(../assets/images/bathroom.png) no-repeat;
+    grid-area: d;
+}
+
+.our-designs__main .our-designs__main--items {
+    /* height: 220px; */
+    padding: 53px 24px 11.12px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.our-designs__main--items h3 {
+    font-family: 'FreightDispProLight-Italic';
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 81.12px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--white);
+
+}
+
+.our-designs__main--items button {
+    width: 189px;
+    height: 55px;
+
+    border-radius: 58px;
+    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(140px);
+    border: none;
+    font-family: 'Product Sans Light';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 19px;
+    /* opacity: 0px; */
+    cursor: pointer;
+}
+
+/* testimonials section */
+.testimonials {}
+
+.testimonials__header h2 {
+    margin: 0 69px 44px;
+    font-family: FreightDispProLight-Italic;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 43.68px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.testimonials__header h2 span {
+    font-family: FreightDispProMedium-Italic;
+}
+
+.testimonials__main {
+    margin: 0 auto;
+    max-width: 592px;
+    padding: 0 21px;
+}
+
+.testimonial-card {
+    background: #F5FFF6;
+    border-radius: 12px;
+    border: 1px solid #EFF0F6;
+    box-shadow: 0px 5px 14px 0px #080F340A;
+    max-width: 592px;
 }
 
 /* footer section */
@@ -556,6 +663,15 @@
         line-height: 81.12px;
         margin-bottom: 45px;
     }
+
+    /* testimonials section */
+    .testimonials__header h2 {
+        max-width: 436px;
+        margin: 0 auto 112px;
+        font-family: FreightDispProLight-Italic;
+        font-size: 65px;
+        line-height: 81.12px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -601,6 +717,28 @@
     .why-choose-us__standout--details-header p {
         font-size: 25px;
         line-height: 30.88px;
+    }
+
+    /* our designs section */
+    .our-designs {
+        margin: 0 auto 150px;
+    }
+
+    .our-designs__main {
+        max-width: 1111px;
+        display: grid;
+        grid-template-columns: 365px;
+        grid-auto-rows: 270px;
+        grid-template-areas:
+            'a  b b '
+            'a  c c '
+            'd  d d '
+        ;
+        gap: 25px;
+    }
+
+    .our-designs__main .our-designs__main--items {
+        padding: 53px 24px 60px;
     }
 }
 
