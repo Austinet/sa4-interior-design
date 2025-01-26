@@ -1,7 +1,12 @@
 /* header section */
 #header {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 54.05%, rgba(0, 0, 0, 0.1944) 67.36%, rgba(0, 0, 0, 0.434374) 72.09%, rgba(0, 0, 0, 0.648) 76.29%, rgba(0, 0, 0, 0.691993) 82.73%, rgba(0, 0, 0, 0.726965) 87.85%, rgba(0, 0, 0, 0.767534) 93.79%, rgba(0, 0, 0, 0.81) 100%), url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png) no-repeat;
-    background-size: cover;
+    background: var(--white);
+}
+
+.glass-background-header {  
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 54.05%, rgba(0, 0, 0, 0.1944) 67.36%, rgba(0, 0, 0, 0.434374) 72.09%, rgba(0, 0, 0, 0.648) 76.29%, rgba(0, 0, 0, 0.691993) 82.73%, rgba(0, 0, 0, 0.726965) 87.85%, rgba(0, 0, 0, 0.767534) 93.79%, rgba(0, 0, 0, 0.81) 100%), url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png) no-repeat !important; */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 54.05%, rgba(0, 0, 0, 0.1944) 67.36%, rgba(0, 0, 0, 0.434374) 72.09%, rgba(0, 0, 0, 0.548) 76.29%, rgba(0, 0, 0, 0.591993) 82.73%, rgba(0, 0, 0, 0.626965) 87.85%, rgba(0, 0, 0, 0.57534) 93.79%, rgba(0, 0, 0, 0.61) 100%), url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png) no-repeat !important;
+    background-size: cover !important;
 }
 
 .header {
@@ -39,9 +44,13 @@
     left: -45rem;
     top: 100px;
     padding: 100px 29px 10rem;
+    background: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.glass-background-header .header-container__nav {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
     backdrop-filter: blur(140px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .header-container__nav--links {
@@ -468,7 +477,8 @@
 
 .our-designs__main--items h3 {
     font-family: 'FreightDispProLight-Italic';
-    font-size: 65px;
+    /* font-size: 65px; */
+    font-size: 55px;
     font-style: italic;
     font-weight: 400;
     line-height: 81.12px;
@@ -708,6 +718,10 @@
         box-shadow: none;
     }
 
+    .glass-background-header .header-container__nav {
+        background: inherit;
+    }
+
     .header-container__nav--links {
         justify-content: space-between;
         align-items: center;
@@ -761,7 +775,8 @@
     }
 
     .intro-container__text-container h2 {
-        font-size: 65px;
+        font-size: 55px;
+        /* font-size: 65px; */
         line-height: 81.12px;
     }
 
@@ -851,6 +866,7 @@
 
     .hero-container__text-container h1 {
         font-size: 65px;
+        font-size: 55px;
         line-height: 81.05px;
     }
 
