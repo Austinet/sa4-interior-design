@@ -1,10 +1,120 @@
+/* body {
+    position: relative;
+} */
+
+.introductory-page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/intro-page.png) no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+
+.introductory-page__banner {
+    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(183px);
+    /* border: 0.5px solid #000000; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 10rem; */
+}
+
+.introductory-page__banner--logo-container {
+    margin-bottom: 20rem;
+}
+
+.introductory-page__banner--loading-animationll {}
+
+.loading-area {
+    display: flex;
+    gap: 0.7px;
+    background: var(--white);
+    width: 132px;
+    
+    height: 11px;
+    border-radius: 9.5px;
+    /* border: 1px solid var(--black); */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.loading-area div {
+    width: 35px;
+    height: 100%;
+    background: var(--black);
+   
+}
+
+.loading-area>div:first-child {
+    border-radius: 9.5px 0 0 9.5px;
+}
+
+.loading-area>div:last-child {
+    border-radius: 0 9.5px 9.5px 0;
+}
+
+.pill-loader {
+    width: 132px;
+    height: 11px;
+    background-color: var(--white);
+    border-radius: 11px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pill-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--white);
+    /* width: 132px; */
+    height: 11px;
+    border-radius: 9.5px;
+
+    background-color: var(--black);
+    /* transition: width 1s linear; */
+}
+
+.pill-steps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.pill-step {
+    width: 20%;
+    text-align: center;
+    opacity: 0.1;
+}
+
+.pill-step:first-child {
+    opacity: 1;
+}
+
+.pill-step.active {
+    opacity: 1;
+}
+
 /* header section */
 #header {
     background: var(--white);
 }
 
-.glass-background-header {  
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 54.05%, rgba(0, 0, 0, 0.1944) 67.36%, rgba(0, 0, 0, 0.434374) 72.09%, rgba(0, 0, 0, 0.648) 76.29%, rgba(0, 0, 0, 0.691993) 82.73%, rgba(0, 0, 0, 0.726965) 87.85%, rgba(0, 0, 0, 0.767534) 93.79%, rgba(0, 0, 0, 0.81) 100%), url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png) no-repeat !important; */
+.glass-background-header {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 54.05%, rgba(0, 0, 0, 0.1944) 67.36%, rgba(0, 0, 0, 0.434374) 72.09%, rgba(0, 0, 0, 0.548) 76.29%, rgba(0, 0, 0, 0.591993) 82.73%, rgba(0, 0, 0, 0.626965) 87.85%, rgba(0, 0, 0, 0.57534) 93.79%, rgba(0, 0, 0, 0.61) 100%), url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png) no-repeat !important;
     background-size: cover !important;
 }
@@ -73,10 +183,10 @@
     color: var(--black);
 }
 
- 
+
 
 .header-container__nav .active-link,
-.header-container__nav a:hover  {
+.header-container__nav a:hover {
     color: #BB9B4E;
     font-weight: 500;
 }
@@ -512,7 +622,7 @@
 }
 
 /* testimonials section */
-.testimonials {}
+/* .testimonials {} */
 
 .testimonials__header h2 {
     margin: 0 69px 44px;

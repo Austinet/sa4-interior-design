@@ -1,0 +1,114 @@
+/**
+ * @license
+ *
+ * Font Family: 
+ 
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+  @font-face {
+    font-family: 'FreightDispProBlack-Italic';
+    src: url('../fonts/FreightDispProBlack-Italic.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FreightDispProblack-Regular';
+    src: url('../fonts/FreightDispProBlack-Regular.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FreightDispProBold-Italic';
+    src: url('../fonts/FreightDispProBold-Italic.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FreightDispProBold-Regular';
+    src: url('../fonts/FreightDispProBold-Regular.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FreightDispProBook-Italic';
+    src: url('../fonts/FreightDispProBook-Italic.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FreightDispProBook-Regular';
+    src: url('../fonts/FreightDispProBook-Regular.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FreightDispProLight-Italic';
+    src: url('../fonts/FreightDispProLight-Italic.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FreightDispProLight-Regular';
+    src: url('../fonts/FreightDispProLight-Regular.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FreightDispProMedium-Italic';
+    src: url('../fonts/FreightDispProMedium-Italic.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FreightDispProMedium-Regular';
+    src: url('../fonts/FreightDispProMedium-Regular.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FreightDispProSemibold-Italic';
+    src: url('../fonts/FreightDispProSemibold-Italic.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FreightDispProSemibold-Regular';
+    src: url('../fonts/FreightDispProSemibold-Regular.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
