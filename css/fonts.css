@@ -70,7 +70,6 @@
     src: url('../fonts/FreightDispProLight-Italic.ttf') format('truetype');
          font-weight: 300 900;
          font-display: swap;
-         font-style: normal;
   }
   
   @font-face {
